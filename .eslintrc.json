@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "ignorePatterns":[
+    "**/libs/**"
+  ],
+  "globals":{
+    "mat4": "readonly",
+    "vec3": "readonly",
+    "progress": "writable"
+  },
+  "rules": {
+    "no-unused-vars": ["warn", {
+      "varsIgnorePattern": "^_",
+      "argsIgnorePattern": "^_"
+    }]
+  }
+}
